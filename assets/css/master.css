@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+body {
+    background-color: #f3e5d8;
+}
+@font-face {
+    font-family: outfitL;
+    src: url(../fonts/outfit/static/Outfit-Light.ttf);
+}
+@font-face {
+    font-family: youngYer;
+    src: url(../fonts/young-serif/YoungSerif-Regular.ttf);
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+}
+.info {
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.time-info {
+    margin-top: 25px;
+    background-color: #fff7fc;
+    padding: 20px;
+    border-radius: 10px;
+}
+.time-list {
+    padding: 15px 30px;
+    line-height: 30px;
+}
+.time-info h3 {
+    color: #783955;
+}
+.time-list ul li::marker {
+    color: #783955;
+}
+.fw-bold {
+    font-weight: 600;
+}
+.p-25 {
+    padding: 25px;
+}
+.border-b-gray {
+    border-bottom: 1px solid rgb(203, 203, 203);
+}
+.ingredient-list {
+    padding: 15px 20px;
+}
+.ingredient-list ul li::marker,
+.instruction-list ol li::marker {
+    color: #864943;
+}
+.c-brown {
+    color: #864943;
+}
+.pt-25 {
+    padding-top: 25px;
+}
+.lh-30 {
+    line-height: 30px;
+}
+.instruction-list {
+    padding: 15px 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    border-bottom: 1px solid rgb(203, 203, 203);
+    font-family: outfitL;
+    align-items: center;
+}
+
+p,
+li,
+h1,
+h2,
+h3 {
+    font-family: outfitL;
+}
+@media screen and (max-width: 450px) {
+    .container {
+        border-radius: 0;
+        padding: 0;
+    }
+    .img-box img {
+        border-radius: 0;
+    }
+}
